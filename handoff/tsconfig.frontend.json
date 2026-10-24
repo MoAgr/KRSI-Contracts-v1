@@ -1,0 +1,20 @@
+{
+  // The dashboard's src/tsconfig.app.json compiler options (no Vite types, no JSX), so krsiChain.ts is proven to
+  // compile inside the frontend app exactly as it is configured today.
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "files": ["krsiChain.ts", "onchain.ts"]
+}

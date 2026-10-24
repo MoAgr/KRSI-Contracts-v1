@@ -1,0 +1,20 @@
+{
+  "name": "krsi-chain-handoff",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "chainStorage handoff kit: encodings, ABIs and addresses for wiring MetaMask calls in the KRSI dashboard",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.frontend.json",
+    "sync": "node scripts/syncArtifacts.mjs",
+    "check": "node scripts/checkAbis.mjs && node scripts/checkReadme.mjs && node scripts/checkDeployments.mjs && node scripts/checkApiFields.mjs"
+  },
+  "dependencies": {
+    "viem": "2.57.4"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "vitest": "5.0.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  // The kit's own check: the frontend's options plus strict mode, over the kit and its tests.
+  "extends": "./tsconfig.frontend.json",
+  "compilerOptions": {
+    "strict": true,
+    "resolveJsonModule": true,
+    "types": []
+  },
+  "files": [],
+  "include": ["krsiChain.ts", "onchain.ts", "test/**/*.ts"]
+}

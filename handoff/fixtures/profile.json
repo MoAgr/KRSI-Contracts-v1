@@ -1,0 +1,19 @@
+{
+  "_source": "real",
+  "_endpoint": "GET /api/me (signed in as the demo farmer)",
+  "_note": "Captured 2026-10-23 from the live backend. phone, fullName, displayName, district, state, latitude, longitude and walletAddress replaced with fake values (walletAddress is derived from the phone number).",
+  "id": 1,
+  "phone": "0000000000",
+  "fullName": "Demo Farmer",
+  "displayName": "Demo Farmer",
+  "role": "FARMER",
+  "category": "farmer",
+  "categoryLabel": "Farmer",
+  "language": "English",
+  "district": "Demo District",
+  "state": "Demo State",
+  "latitude": 0.0,
+  "longitude": 0.0,
+  "walletAddress": "0x0000000000000000000000000000000000000001",
+  "createdAt": "2026-10-20T17:05:58.796856Z"
+}

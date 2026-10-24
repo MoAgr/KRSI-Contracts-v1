@@ -1,0 +1,22 @@
+# Build output
+out/
+cache/
+
+# Secrets: private keys and RPC URLs live only in .env (.env.example lists the variables)
+.env
+
+# Local broadcast logs (Phase 3 records what matters in docs/PHASE_LOG.md)
+broadcast/*/31337/
+
+# Local deployments and test output; deployments/421614.json is the real one and is kept.
+deployments/31337.json
+deployments/test/
+
+# The kit's installed packages (package-lock.json is kept for npm ci)
+handoff/node_modules/
+
+# Kept out of the repository: working documents, the Phase 0 checker that reads them, and local files
+docs/
+scripts/
+handoff.zip
+.DS_Store

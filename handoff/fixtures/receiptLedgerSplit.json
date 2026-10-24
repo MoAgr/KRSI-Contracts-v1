@@ -1,0 +1,143 @@
+{
+  "_source": "real",
+  "_endpoint": "GET /api/enwrs/1/ledger (signed in as the demo farmer)",
+  "_note": "Captured 2026-10-23 from the live backend. actorAddress replaced with fake values (the real ones are derived from phone numbers), so block hashes no longer recompute from the block content; hash and prevHash are the real values. Receipt 1 was part sold during seeding: shows real TRADE_SETTLED and ENWR_SPLIT payloads.",
+  "entityType": "ENWR",
+  "entityId": "1",
+  "intact": true,
+  "blocks": [
+    {
+      "height": 19,
+      "hash": "7f10c88e05bf3f804c985a5b1db52e42cb3bbe934decaa3df45e840569d7d908",
+      "prevHash": "04b4e4bba1a5eaaedfce9e4f71cd404e5f5a63e1fb3b4487f25dd783bfca332d",
+      "createdAtMs": 1792515970002,
+      "timestamp": "2026-10-20T17:06:10.002Z",
+      "eventType": "PRODUCE_DEPOSITED",
+      "entityType": "ENWR",
+      "entityId": "1",
+      "actorAddress": "0x0000000000000000000000000000000000000002",
+      "payload": {
+        "bookingId": 1,
+        "commodity": "Coffee",
+        "depositorId": 1,
+        "enwrId": 1,
+        "grade": "Grade A",
+        "moisturePct": 11,
+        "netWeightMt": 50,
+        "storedOn": "2026-10-20",
+        "validTill": "2027-04-18",
+        "warehouseId": "nayak"
+      }
+    },
+    {
+      "height": 20,
+      "hash": "d9c773148a57e693874c9a7450364dc2a926d842c9795ed98736fa9cef0bbf8b",
+      "prevHash": "7f10c88e05bf3f804c985a5b1db52e42cb3bbe934decaa3df45e840569d7d908",
+      "createdAtMs": 1792515970190,
+      "timestamp": "2026-10-20T17:06:10.190Z",
+      "eventType": "INVOICE_ISSUED",
+      "entityType": "INVOICE",
+      "entityId": "1",
+      "actorAddress": "0x0000000000000000000000000000000000000002",
+      "payload": {
+        "amount": 6000,
+        "currency": "INR",
+        "dueDate": "2026-11-04",
+        "enwrId": 1,
+        "invoiceId": 1,
+        "periodFrom": "2026-10-20",
+        "periodTo": "2026-11-19",
+        "quantityMt": 50,
+        "warehouseId": "nayak"
+      }
+    },
+    {
+      "height": 21,
+      "hash": "6e5083aa73a5249082059fc09a7c8d7a3710e6e5551ed206a36e2a8320009fc6",
+      "prevHash": "d9c773148a57e693874c9a7450364dc2a926d842c9795ed98736fa9cef0bbf8b",
+      "createdAtMs": 1792515970301,
+      "timestamp": "2026-10-20T17:06:10.301Z",
+      "eventType": "ENWR_ISSUED",
+      "entityType": "ENWR",
+      "entityId": "1",
+      "actorAddress": "0x0000000000000000000000000000000000000003",
+      "payload": {
+        "commodity": "Coffee",
+        "enwrId": 1,
+        "foreignMatterPct": 0.5,
+        "grade": "Grade A",
+        "moisturePct": 11,
+        "ownerId": 1,
+        "quantityMt": 50,
+        "receiptNo": "ENWR-000001",
+        "storedOn": "2026-10-20",
+        "validTill": "2027-04-18",
+        "warehouseId": "nayak"
+      }
+    },
+    {
+      "height": 22,
+      "hash": "72ddc8eeb02133f215dcf10a6ad769ab3efafc606be05b5b88cdf4d7edb7da2e",
+      "prevHash": "6e5083aa73a5249082059fc09a7c8d7a3710e6e5551ed206a36e2a8320009fc6",
+      "createdAtMs": 1792515970590,
+      "timestamp": "2026-10-20T17:06:10.590Z",
+      "eventType": "LISTING_CREATED",
+      "entityType": "LISTING",
+      "entityId": "1",
+      "actorAddress": "0x0000000000000000000000000000000000000001",
+      "payload": {
+        "askingPricePerMt": 260000,
+        "commodity": "Coffee",
+        "enwrId": 1,
+        "listingId": 1,
+        "minQuantityMt": 10,
+        "quantityMt": 50,
+        "receiptNo": "ENWR-000001",
+        "validUntil": "2026-11-19"
+      }
+    },
+    {
+      "height": 24,
+      "hash": "42abad751ce816c98542fffba5dba7bc5975a2dac1e826bf48510bc27dbccf61",
+      "prevHash": "3e3252f469df215cb540f33909932d1c32941062701cefa126e02ea37b1884f6",
+      "createdAtMs": 1792515971004,
+      "timestamp": "2026-10-20T17:06:11.004Z",
+      "eventType": "TRADE_SETTLED",
+      "entityType": "TRADE",
+      "entityId": "1",
+      "actorAddress": "0x0000000000000000000000000000000000000001",
+      "payload": {
+        "bidId": 1,
+        "buyerEnwrId": 2,
+        "buyerId": 2,
+        "commodity": "Coffee",
+        "listingId": 1,
+        "pricePerMt": 255000,
+        "quantityMt": 10,
+        "sellerId": 1,
+        "sourceEnwrId": 1,
+        "totalValue": 2550000,
+        "tradeId": 1
+      }
+    },
+    {
+      "height": 25,
+      "hash": "83dd322b4ebc77d4dcf28346241bcb26cbcbea7fb5ab589c1275079caacbb052",
+      "prevHash": "42abad751ce816c98542fffba5dba7bc5975a2dac1e826bf48510bc27dbccf61",
+      "createdAtMs": 1792515971193,
+      "timestamp": "2026-10-20T17:06:11.193Z",
+      "eventType": "ENWR_SPLIT",
+      "entityType": "ENWR",
+      "entityId": "2",
+      "actorAddress": "0x0000000000000000000000000000000000000001",
+      "payload": {
+        "enwrId": 2,
+        "parentEnwrId": 1,
+        "parentRemainingMt": 40,
+        "quantityMt": 10,
+        "toUserId": 2,
+        "tradeId": 1
+      }
+    }
+  ]
+}

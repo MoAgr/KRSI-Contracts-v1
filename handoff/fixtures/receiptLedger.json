@@ -1,0 +1,79 @@
+{
+  "_source": "real",
+  "_endpoint": "GET /api/enwrs/6/ledger (signed in as the demo farmer)",
+  "_note": "Captured 2026-10-23 from the live backend. actorAddress replaced with fake values (the real ones are derived from phone numbers), so block hashes no longer recompute from the block content; hash and prevHash are the real values.",
+  "entityType": "ENWR",
+  "entityId": "6",
+  "intact": true,
+  "blocks": [
+    {
+      "height": 64,
+      "hash": "641345b4cca2341b43f8fc1f6f66963855a9510efb0a063de34879eee90c2af5",
+      "prevHash": "844a9493277e08f2caa7d3fc559c78040564c6e73114ccac669d8ec9c4bd31ea",
+      "createdAtMs": 1792689659948,
+      "timestamp": "2026-10-22T17:20:59.948Z",
+      "eventType": "PRODUCE_DEPOSITED",
+      "entityType": "ENWR",
+      "entityId": "6",
+      "actorAddress": "0x0000000000000000000000000000000000000002",
+      "payload": {
+        "bookingId": 12,
+        "commodity": "Coffee",
+        "depositorId": 1,
+        "enwrId": 6,
+        "grade": "Raw",
+        "moisturePct": 10,
+        "netWeightMt": 20,
+        "storedOn": "2026-10-22",
+        "validTill": "2027-04-20",
+        "warehouseId": "agri-vault"
+      }
+    },
+    {
+      "height": 65,
+      "hash": "dbd38de5620cea8985f54d95c9b0d7ab01dc451b1c36051a8f83d8dcb22e07ad",
+      "prevHash": "641345b4cca2341b43f8fc1f6f66963855a9510efb0a063de34879eee90c2af5",
+      "createdAtMs": 1792689660147,
+      "timestamp": "2026-10-22T17:21:00.147Z",
+      "eventType": "INVOICE_ISSUED",
+      "entityType": "INVOICE",
+      "entityId": "6",
+      "actorAddress": "0x0000000000000000000000000000000000000002",
+      "payload": {
+        "amount": 2400,
+        "currency": "INR",
+        "dueDate": "2026-11-06",
+        "enwrId": 6,
+        "invoiceId": 6,
+        "periodFrom": "2026-10-22",
+        "periodTo": "2026-11-21",
+        "quantityMt": 20,
+        "warehouseId": "agri-vault"
+      }
+    },
+    {
+      "height": 66,
+      "hash": "89561c5c9b311b531577de5a72ef7afc25a06176216bcdef2b0a6b62ed7928d0",
+      "prevHash": "dbd38de5620cea8985f54d95c9b0d7ab01dc451b1c36051a8f83d8dcb22e07ad",
+      "createdAtMs": 1792689759146,
+      "timestamp": "2026-10-22T17:22:39.146Z",
+      "eventType": "ENWR_ISSUED",
+      "entityType": "ENWR",
+      "entityId": "6",
+      "actorAddress": "0x0000000000000000000000000000000000000003",
+      "payload": {
+        "commodity": "Coffee",
+        "enwrId": 6,
+        "foreignMatterPct": 1,
+        "grade": "Raw",
+        "moisturePct": 10,
+        "ownerId": 1,
+        "quantityMt": 20,
+        "receiptNo": "ENWR-000006",
+        "storedOn": "2026-10-22",
+        "validTill": "2027-04-20",
+        "warehouseId": "agri-vault"
+      }
+    }
+  ]
+}
